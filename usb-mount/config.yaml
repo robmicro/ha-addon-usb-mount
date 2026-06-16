@@ -1,5 +1,5 @@
 name: "USB Media Mount"
-version: "1.0.0"
+version: "1.1.0"
 slug: usb-mount
 description: "Mounts USB HDD to /media/USB for music sharing via Samba"
 arch:
@@ -9,6 +9,7 @@ startup: system
 boot: auto
 host_network: true
 full_access: true
+init: false
 devices:
   - /dev/sda1
   - /dev/disk
